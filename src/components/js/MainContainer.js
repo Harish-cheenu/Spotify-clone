@@ -18,12 +18,12 @@ const MainContainer = () => {
         
         <div className="head">
             <h1 Style={"text-align:center;padding:1rem"}>ITUNES</h1>
-            <h4>{}</h4>
-        </div>
-        <button className="logout" onClick={handleLogout}>
+            <button className="logout" onClick={handleLogout}>
                 <h5>Logout</h5> 
-                <IoLogOut   size={28}/>
-        </button>
+                <IoLogOut size={28}/>
+            </button>
+        </div>
+        
         <div className="Main-Container">
             {/* { toggle.a===0? <Home/> : (toggle.a===1? <Search/> : <Abort/>) } */}
            
