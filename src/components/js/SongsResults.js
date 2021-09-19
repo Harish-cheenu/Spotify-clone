@@ -14,8 +14,8 @@ const SongsResults = ({track}) => {
      <div className="song-result" onClick={handlePlay}>
          <div className="song-vertical-card">
             <img className="my-1" src={track.albumUrl.url} style={{height:"64px",width:"64px"}} alt="song" />
-            <div>
-                <h6 className="--Name">{track.title}</h6>
+            <div className="mx-1">
+                <h6 className="--Name">{track.title.slice(0,20)}</h6>
                 <h6 className="text-muted">{track.artist}</h6>
             </div>
         </div>
