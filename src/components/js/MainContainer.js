@@ -16,7 +16,7 @@ const MainContainer = () => {
     return (
         <div className={useTheme?"container-xl dark-mode":"container-xl light-mode"}>
         
-        <div className="d-flex  justify-content-flex-end">
+        <div className="d-flex  justify-content-end">
             <button className="logout" onClick={handleLogout}>
                 <h5>Logout</h5> 
                 <IoLogOut size={28}/>
