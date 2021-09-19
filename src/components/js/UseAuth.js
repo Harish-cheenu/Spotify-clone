@@ -9,7 +9,7 @@ export default function UseAuth ({code}) {
     const[expriesIn,setExpriesIn] = useState()
 
     useEffect(() => {
-        axios.post("http://localhost:3001/login",{code})
+        axios.post("https://harish-spotify-clone.herokuapp.com/login",{code})
         .then(res=>{
             accessToken.b(res.data.accessToken)
             setRefreshToken(res.data.refreshToken)
@@ -23,7 +23,7 @@ export default function UseAuth ({code}) {
     useEffect(()=>{
         if(!refreshToken||!expriesIn) return
         const interval =setInterval(() => {
-            axios.post("http://localhost:3001/refresh",{refreshToken})
+            axios.post("https://harish-spotify-clone.herokuapp.com/refresh",{refreshToken})
             .then(res=>{
                 accessToken.b(res.data.accessToken)
                 // setRefreshToken(res.data.refreshToken)
