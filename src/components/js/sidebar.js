@@ -21,7 +21,7 @@ const Sidebar = () => {
     return (
         <div className="sidebar"  Style={useTheme?`background-color: var(--bgMenu--Dark);color : var(--white--text);`:`background-color:var(--bgMenu--Light);color : var(--dark--text);`}>
             <div className="sidebar_logo">
-                <h2>Itunes Music</h2>
+                <h2>Spotify</h2>
             </div> 
             <ul id="active" className="sidebar_items">
                 <a className="--home" Style={useTheme?`color: var(--white--text)`:`color: var(--dark--text)`} href="#top"><li className={toggle.a===0?"sidebar_item active":"sidebar_item"} onClick={()=>setToggle.b(0)}>Home</li></a>

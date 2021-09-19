@@ -17,7 +17,6 @@ const MainContainer = () => {
         <div className={useTheme?"container-xl dark-mode":"container-xl light-mode"}>
         
         <div className="head">
-            <h1 Style={"text-align:center;padding:1rem"}>ITUNES</h1>
             <button className="logout" onClick={handleLogout}>
                 <h5>Logout</h5> 
                 <IoLogOut size={28}/>
