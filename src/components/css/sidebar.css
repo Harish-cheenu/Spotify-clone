@@ -88,8 +88,7 @@ input:checked[type="checkbox"]::before{
 }
 .logout{
     cursor:pointer;
-    width: 15vw;
     display: flex;
     justify-content: space-evenly;
-    margin: 2rem 0rem;
+    margin: 0 0rem;
 }
