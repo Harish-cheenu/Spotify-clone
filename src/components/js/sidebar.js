@@ -1,7 +1,7 @@
 import React from 'react';
 import {useMenu,useChange} from "./UseContext"
 import { useActiveMenu } from './UseContext';
-import {IoLogOut} from "react-icons/io5"
+
 const Sidebar = () => {
     
     const setTheme = useChange();
@@ -9,13 +9,13 @@ const Sidebar = () => {
     const toggle = useActiveMenu();
     const setToggle = useActiveMenu();
 
-    const handleLogout = () =>{
-        // const url = 'https://accounts.spotify.com/authorize'                                                                                                                                                                                                                                                                               
-        // const spotifyLogoutWindow = window.open(url, 'Spotify Logout', 'width=700,height=500,top=40,left=40')  
-        // setTimeout(() => spotifyLogoutWindow.close(), 200)
-        window.location = "/"                                                                                              
+    // const handleLogout = () =>{
+    //     // const url = 'https://accounts.spotify.com/authorize'                                                                                                                                                                                                                                                                               
+    //     // const spotifyLogoutWindow = window.open(url, 'Spotify Logout', 'width=700,height=500,top=40,left=40')  
+    //     // setTimeout(() => spotifyLogoutWindow.close(), 200)
+    //     window.location = "/"                                                                                              
         
-    }
+    // }
 
 
     return (
@@ -34,10 +34,10 @@ const Sidebar = () => {
             <div className="toggle">
                 <input type="checkbox" defaultChecked={true} onClick={setTheme} />
             </div> 
-            <button className="logout" onClick={handleLogout}>
+            {/* <button className="logout" onClick={handleLogout}>
                 <h5>Logout</h5> 
                 <IoLogOut   size={28}/>
-            </button>     
+            </button>      */}
 
         </div>
     )
