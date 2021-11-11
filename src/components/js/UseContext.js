@@ -47,12 +47,12 @@ export function useAccess(){
 export function ContextProvider ({children}){
 
 //Second create State     
-    const[menu,setmenu]=useState(true);
+    const [menu,setmenu]=useState(true);
     const [activeMenu,setActiveMenu]=useState(0);
-    const[searchValue,setSearchvalue]=useState(" ");
-    const[songData,setsongData]=useState([])
-    const[playlist,setPlaylist]=useState([])
-    const[playPause,setPlayPause] = useState(0);
+    const [searchValue,setSearchvalue]=useState(" ");
+    const [songData,setsongData]=useState([])
+    const [playlist,setPlaylist]=useState([])
+    const [playPause,setPlayPause] = useState(0);
     const [newReleases,setNewReleases] = useState([])
     const [romance,setRomance] = useState([])
     const [accessToken,setAccessToken]= useState()
